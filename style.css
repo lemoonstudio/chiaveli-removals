@@ -239,7 +239,7 @@ header .header nav ul li:last-child {
 }
 @media screen and (max-width: 990px) {
   .videosbg {
-    height: auto;
+    height: 70vh;
   }
 }
 .videosbg .overlay-video {
@@ -249,7 +249,7 @@ header .header nav ul li:last-child {
   background: #100A76;
   opacity: 0.8;
 }
-.videosbg iframe {
+.videosbg video {
   width: 100%;
   height: 100%;
   object-fit: cover;
