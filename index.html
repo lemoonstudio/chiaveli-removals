@@ -96,7 +96,7 @@
 
 
     
-   <div class="videosbg">
+   <div class="videosbg hidemobile">
         <video autoplay muted no-controls loop>
             <source src="videos/removals-video.mp4" type="video/mp4">
             <source src="videos/removals-video.ogg" type="video/ogg">
@@ -104,7 +104,7 @@
         </video>
     </div>
     
-    <div class="heroMobile">
+    <div class="heroMobile hidedesktop">
         <img src="img/topo.jpg"/>
     </div>
 
@@ -690,6 +690,25 @@
     video {
     width: 100%;
 }
+    .hidemobile
+    {
+        display: block;
+    }
+    .hidedesktop
+    {
+        display: none;
+    }
+    @media(max-width:900px)
+        {
+            .hidemobile
+    {
+        display: none;
+    }
+    .hidedesktop
+    {
+        display: block;
+    }
+    }
     </style>
 </body>
 </html>
